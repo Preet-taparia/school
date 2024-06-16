@@ -1,0 +1,12 @@
+.rbc-event.success {
+    background-color: green;
+  }
+  
+  .rbc-event.info {
+    background-color: blue;
+  }
+  
+  .rbc-event.error {
+    background-color: red;
+  }
+  

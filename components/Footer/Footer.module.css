@@ -1,0 +1,61 @@
+.footer {
+  @apply w-full bg-[#071E4A] py-7 px-5 text-white md:px-8 xl:px-[110px] xl:flex xl:flex-wrap xl:mx-auto  2xl:px-[180px];
+}
+
+.footer-header-container {
+  @apply flex pb-5 items-center h-[100px] border-b-[1px] border-b-[#455677] xl:w-full;
+}
+
+.footer-header-text {
+  @apply block flex-1 mr-4 font-bold md:text-[24px] xl:text-[20px];
+}
+
+.footer-logo-container {
+  @apply w-3/12 h-full xl:w-[100px];
+}
+
+.footer-logo {
+  @apply h-full object-contain md:w-full md:h-3/4 xl:w-full xl:h-auto;
+}
+
+.footer-content-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 ;
+}
+
+.footer-content-box {
+  @apply flex flex-col px-3;
+}
+
+.footer-content-box > p {
+  @apply md:text-[20px] xl:text-[18px] 2xl:text-[16px] pt-5;
+}
+
+.footer-content-box p {
+  @apply md:text-[20px] xl:text-[18px] 2xl:text-[16px];
+}
+
+.footer-school-name {
+  @apply border-y-[1px] border-y-[#455677] flex flex-col justify-center items-center py-6 xl:w-1/2 xl:pb-0 xl:border-b-[0px] xl:border-t-[1px] xl:border-t-[#455677] xl:flex-row xl:justify-start;
+}
+
+.footer-school-name p {
+  @apply md:text-[20px] xl:pr-2 xl:text-[14px];
+}
+
+.footer-authors-box {
+  @apply flex flex-col justify-center items-center pt-6 xl:w-1/2 xl:flex-row xl:justify-end xl:border-t-[1px] xl:border-t-[#455677];
+}
+
+.footer-authors-box p {
+  @apply md:text-[20px] xl:pl-6 xl:text-[14px];
+}
+
+@media only screen and (max-width: 280px) {
+  .footer-header-text {
+    @apply text-[12px];
+  }
+
+  .footer-school-name p {
+    @apply text-center;
+  }
+}

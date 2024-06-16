@@ -1,0 +1,35 @@
+.navbar {
+  @apply top-0 bg-[#071E4A] w-full h-[60px] xl:bg-transparent flex items-center justify-between px-3 py-4 z-[100] xl:flex xl:mt-5 xl:px-[110px] 2xl:px-[180px] 3xl:mx-auto sticky transition-all duration-1000 ease-in-out;
+}
+
+.navbar-fixed {
+  @apply fixed top-0 bg-[#071E4A] w-full h-[60px] flex items-center justify-between px-3 py-4 z-[100] 2xl:px-[180px]  3xl:mx-auto transition-all duration-1000 ease-in-out;
+}
+
+.navLinks {
+  @apply hidden xl:flex justify-around items-center;
+}
+
+.navLinksMobile {
+  @apply flex flex-col absolute py-4 top-[60px] left-0 w-full bg-[#071E4A] items-center transition-all duration-300 ease-in-out;
+}
+
+.list {
+  @apply flex flex-col items-center w-full;
+}
+
+.list-item {
+  @apply my-4;
+}
+
+.list-item-anchor {
+  @apply text-white font-bold text-[22px] hover:text-[#FAC13C] duration-300;
+}
+
+.navbar-a {
+  @apply text-white font-bold text-[22px] hover:text-[#FAC13C] duration-300 px-3 2xl:px-6;
+}
+
+.navbar-selected {
+  @apply text-[#FAC13C] hover:cursor-default;
+}

@@ -1,0 +1,53 @@
+.section-container {
+  @apply flex flex-col border-b-[1px] border-b-[#F0F0F0] xl:flex-row xl:flex-wrap xl:justify-between;
+}
+
+.header2-container {
+  @apply w-full flex justify-center relative xl:w-1/2 xl:self-center xl:my-10 2xl:w-3/5 3xl:w-2/5;
+}
+
+.header2 {
+  @apply text-[#579CE2] font-bold text-center text-3xl py-2 w-[150px] md:text-4xl md:w-auto xl:text-5xl;
+}
+
+.header3 {
+  @apply text-[#579CE2] font-bold text-center text-2xl py-10 md:text-3xl xl:text-left xl:text-4xl xl:block xl:w-full;
+}
+
+.ellipses-left {
+  @apply absolute top-[10px] left-[10px];
+}
+
+.ellipses-right {
+  @apply absolute top-[10px] right-[10px];
+}
+
+.agreements-section-container {
+  @apply w-full flex flex-col border-b-[1px] border-b-[#F0F0F0] xl:py-5;
+}
+
+.button-container {
+  @apply mt-7 py-4 md:w-3/5 mx-auto xl:w-auto xl:flex xl:justify-center xl:items-center;
+}
+
+.send-button {
+  @apply bg-[#FAC13C] text-[#ffffff] px-6 py-3 rounded-full;
+}
+
+.status-message {
+  @apply mt-4 text-center text-lg;
+}
+
+@media only screen and (max-width: 280px) {
+  .ellipses-left {
+    @apply top-[10px] left-0;
+  }
+
+  .ellipses-right {
+    @apply top-[10px] right-0;
+  }
+
+  .send-button {
+    @apply text-[15px];
+  }
+}
