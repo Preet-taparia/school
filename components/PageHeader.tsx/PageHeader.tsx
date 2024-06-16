@@ -35,7 +35,7 @@ export const PageHeader = ({
 
   return (
     <div className={` ${styles.container} `}>
-      {width && width >= 1280 && <Navbar className={undefined} />}
+      {width && width >= 1280 && <Navbar className={""} />}
       <div className="w-full h-full absolute z-[-1]">
         {width && (
           <Image

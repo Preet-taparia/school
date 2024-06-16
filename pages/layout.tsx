@@ -34,7 +34,7 @@ export default function Layout({ children }: ILayout) {
           content="/assets/homepage/aboutUsMobile.svg"
         />
       </Head>
-      {width && width < 1280 && <Navbar className={undefined} />}
+      {width && width < 1280 && <Navbar className={""} />}
       <>{children}</>
       <Footer />
     </>

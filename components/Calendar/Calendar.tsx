@@ -1,7 +1,6 @@
 import React from 'react';
 import { Calendar as BigCalendar, momentLocalizer, Event } from 'react-big-calendar';
 import moment from 'moment';
-import styles from './Calendar.module.css';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 
 const localizer = momentLocalizer(moment);
@@ -26,19 +25,16 @@ const MonthlyCalendar: React.FC<CalendarProps> = ({
       title: 'All day conference',
       start: new Date('2024-11-04'),
       end: new Date('2024-11-06'),
-      className: styles.success,
     },
     {
       title: 'Meeting with Mary',
       start: new Date('2024-11-10'),
       end: new Date('2024-11-10'),
-      className: styles.info,
     },
     {
       title: 'Winter Hackathon',
       start: new Date('2024-11-22'),
       end: new Date('2024-11-25'),
-      className: styles.error,
     },
   ];
 
@@ -51,7 +47,6 @@ const MonthlyCalendar: React.FC<CalendarProps> = ({
         events={events}
         views={['month']}
         selectable={selectable}
-        resizable={editable}
         style={{ height: '100%' }}
       />
     </div>

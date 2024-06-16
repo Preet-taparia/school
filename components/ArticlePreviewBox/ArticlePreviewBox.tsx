@@ -66,7 +66,7 @@ export const ArticlePreviewBox = ({
               );
             },
             em: ({ node, ...props }) => {
-              return <p className="italic inline-block" {...props} />;
+              return <span className="italic inline-block" {...props} />;
             },
           }}
         >

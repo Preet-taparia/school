@@ -7,7 +7,11 @@ import useWindowDimensions from '../../hooks/useWindowDimensions';
 import Logo from '../../public/assets/logo.svg';
 import Hamburger from '../Hamburger/Hamburger';
 
-const Navbar = ({ className }) => {
+interface NavbarProps {
+  className: string;
+}
+
+const Navbar = ({ className }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [fix, setFix] = useState(false);
   const router = useRouter();

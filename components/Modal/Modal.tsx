@@ -1,7 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, ReactNode } from 'react';
 import ReactDOM from 'react-dom';
 
-const Modal = ({ show, onClose, children }) => {
+interface ModalProps {
+  show: boolean;
+  onClose: () => void;
+  children: ReactNode;
+}
+
+const Modal = ({ show, onClose, children }: ModalProps) => {
   const [isBrowser, setIsBrowser] = useState(false);
 
   useEffect(() => {
