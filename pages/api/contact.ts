@@ -16,29 +16,29 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export default async (req, res) => {
-  const { fullName,email, message } = req.body;
+const handler = async (req, res) => {
+  const { fullName, email, message } = req.body;
 
   const mailToSchool = {
-    from: ``,
-    to: 'preettaparia@gmail.com', // Change to your recipient email address
-    subject: 'Contact Form Submission', // Change subject as needed
+    from: process.env.EMAIL, 
+    to: 'preettaparia@gmail.com', 
+    subject: 'Contact Form Submission', 
     html: `
-    <h1>HI ${fullName}</div>
-    <div>Message: ${message}</div>
-    <div>Email: ${email}</div>
+      <h1>HI ${fullName}</h1>
+      <div>Message: ${message}</div>
+      <div>Email: ${email}</div>
     `,
   };
 
   try {
-    // Send email to school
     await transporter.sendMail(mailToSchool);
     console.log('Email sent to school successfully');
 
-    // Send response to client
-    res.status(200).send('Emails sent successfully');
+    res.status(200).send('Email sent successfully');
   } catch (error) {
-    console.error('Error sending emails:', error);
-    res.status(500).send('Error sending emails');
+    console.error('Error sending email:', error);
+    res.status(500).send('Error sending email');
   }
 };
+
+export default handler;

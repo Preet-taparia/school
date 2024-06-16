@@ -108,7 +108,7 @@ export default function Home({ posts }: { posts: any }) {
               The Shining Star School
             </h4>
             <p className={styles['about-us-paragraph']}>
-              The perfect school ... It's not just certificates and a high level
+              The perfect school ... It&apos;s not just certificates and a high level of teaching.
               of teaching. This is not lacking in most educational institutions.
               After all, their role is to improve their own quality management
               systems and constantly increase the level of services offered.
