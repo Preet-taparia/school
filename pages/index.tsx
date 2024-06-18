@@ -1,39 +1,24 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import Button from '../components/Button/Button';
 import HomePageGallery from '../components/HomePageGallery/HomePageGallery';
 import { PageHeader } from '../components/PageHeader.tsx/PageHeader';
+import {ArticlePreviewBox} from '../components/ArticlePreviewBox/ArticlePreviewBox';
 import EllipsesLeft from '../public/assets/EllipsesLeft.svg';
 import EllipsesRight from '../public/assets/EllipsesRight.svg';
 import BgDesktop from '../public/assets/headers/bgHomeDesktop.jpg';
 import BgMobile from '../public/assets/headers/bgHomeMobile.jpg';
 import AboutUsMobile from '../public/assets/homepage/aboutUsMobile.svg';
 import styles from '../styles/HomePage.module.css';
+import { articles } from '../lib/articleData';
 
-export default function Home({ posts }: { posts: any }) {
+export default function Home() {
   const router = useRouter();
+  const [howManyArticlesLoaded, setHowManyArticlesLoaded] = useState(3);
 
   return (
     <Fragment>
-      {/* <div
-        data-cypress="recruitment-modal"
-        className="hidden xl:flex fixed bottom-0 w-full h-[80px] bg-white z-[90] items-center justify-center 2xl:h-[100px]"
-      >
-        <Link
-          href="/admission"
-          className="text-center text-[#579CE2] text-[20px] underline font-[700]"
-        >
-          Rekrutacja na rok 2023 trwa, zapisz swoje dziecko już dziś!
-        </Link>
-        <Button
-          label="Wypełnij formularz"
-          buttonColor="bg-[#579CE2]"
-          textColor="text-[white]"
-          className={styles['button-modal-recrutation']}
-          onClick={() => router.push('/admission')}
-        />
-      </div> */}
       <PageHeader
         bgUrl={BgMobile}
         bgXlUrl={BgDesktop}
@@ -53,53 +38,36 @@ export default function Home({ posts }: { posts: any }) {
             <Image src={EllipsesRight} alt="EllipsesRight" />
           </div>
           <h2 className={styles.header2}>
-            See, <br className="md:hidden" /> what is happening with us
+             Our, <br className="md:hidden" /> latest news
           </h2>
         </div>
-        {/* {posts
-          .filter((post: any) => post.fields.pinned === true)
-          .map((post: any) => {
-            return (
-              <ArticlePreviewBox
-                shortDescription={post.fields.shortDescription}
-                key={post.sys.id}
-                id={post.sys.id}
-                title={post.fields.title}
-                content={post.fields.content}
-                createdAt={post.sys.createdAt}
-                imageSrc={'https:' + post.fields.mainImage.fields.file.url}
-              />
-            );
-          })}
-        {posts
-          ?.filter((post: any) => post.fields.pinned === false)
-          .map((post: any, index: number) => {
-            if (1 < index) return null;
-            return (
-              <ArticlePreviewBox
-                shortDescription={post.fields.shortDescription}
-                key={post.sys.id}
-                id={post.sys.id}
-                title={post.fields.title}
-                content={post.fields.content}
-                createdAt={post.sys.createdAt}
-                imageSrc={'https:' + post.fields.mainImage.fields.file.url}
-              />
-            );
-          })} */}
-        <Button
-          label="See all Events"
-          onClick={() => router.push('/events')}
-          textColor="text-white"
-          className={styles['button-all-posts']}
-          buttonColor="bg-[#FAC13C]"
-        />
+        {articles.slice(0, howManyArticlesLoaded).map(article => (
+          <ArticlePreviewBox
+            key={article.id}
+            id={article.id}
+            title={article.title}
+            content={article.content}
+            createdAt={article.createdAt}
+          />
+        ))}
+        {howManyArticlesLoaded < articles.length && (
+          <div className="w-full flex justify-center my-7 px-3 pb-[50px] max-w-[1920px] xl:pb-[100px] md:px-8 xl:px-[110px] 2xl:px-[200px]">
+            <Button
+              dataCypress="show-more-articles"
+              label="Read more articles"
+              onClick={() => setHowManyArticlesLoaded(prev => prev + 3)}
+              textColor="text-white"
+              buttonColor="bg-[#FAC13C]"
+            />
+          </div>
+        )}
+
         <div className={styles['about-us-container']}>
           <div className={styles['about-us-image']}>
             <Image
               className="w-full md:w-1/2 md:mx-auto xl:w-full"
               src={AboutUsMobile}
-              alt="O nas"
+              alt="About Us"
             />
           </div>
 
@@ -131,19 +99,3 @@ export default function Home({ posts }: { posts: any }) {
     </Fragment>
   );
 }
-
-// export async function getStaticProps() {
-//   const client = createClient({
-//     space: process.env.SANITY_SPACE,
-//     environment: process.env.SANITY_ENVIRONMENT, // defaults toprocess.env.SANITY_ENVIRONMENT if not set
-//     accessToken: process.env.SANITY_TOKEN,
-//   });
-
-//   const res = await client.getEntries({ content_type: 'post' });
-
-//   return {
-//     props: {
-//       posts: res.items,
-//     },
-//   };
-// }
