@@ -1,6 +1,6 @@
 .last-section-container,
 .section-container {
-  @apply w-full flex flex-col text-[#071E4A] border-b-[1px] border-[#F0F0F0] py-6;
+  @apply w-full flex flex-col text-[#071E4A] border-b-[1px] border-[#F0F0F0] pt-10;
 }
 
 .last-section-container {
@@ -8,11 +8,11 @@
 }
 
 .section-header {
-  @apply text-[#579CE2] text-[25px] font-bold mb-3 md:text-[30px] xl:text-[35px];
+  @apply text-[#579CE2] text-[25px] font-bold mb-3 md:text-[30px] xl:text-[35px] text-center;
 }
 
 .section-inner-box {
-  @apply mb-3 md:text-[20px] xl:text-[25px];
+  @apply mb-3 md:text-[20px] xl:text-[25px] text-center leading-8;
 }
 
 .day-room-section-container {
