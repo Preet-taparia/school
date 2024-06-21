@@ -47,7 +47,7 @@ const Article = () => {
             <Image src={EllipsesRight} alt="EllipsesRight" />
           </div>
           <h2 className={styles.header2}>
-            Read <br className="md:hidden" /> published articles
+            Read <br className="md:hidden" /> Articles
           </h2>
         </div>
       </div>

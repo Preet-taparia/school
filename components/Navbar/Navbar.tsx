@@ -43,7 +43,7 @@ const Navbar = ({ className }: NavbarProps) => {
     const isYellowBgRoute = router.route === '/contact' || router.route === '/about-us';
     
     if (isSelected) {
-      if (isYellowBgRoute && !fix) {
+      if (isYellowBgRoute && width >= 1280 && !fix) {
         return `${styles['navbar-selected-has-yellow-bg']}`;
       }
       return `${styles['navbar-selected']}`;
