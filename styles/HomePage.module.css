@@ -55,7 +55,7 @@
 }
 
 .about-us-paragraph span {
-  @apply font-bold text-[#FAC13C];
+  @apply text-[#FAC13C];
 }
 
 .button-about-us {

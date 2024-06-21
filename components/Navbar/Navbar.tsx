@@ -38,6 +38,19 @@ const Navbar = ({ className }: NavbarProps) => {
     }
   }, []);
 
+  const getLinkClassNames = (path: string) => {
+    const isSelected = router.route === path;
+    const isYellowBgRoute = router.route === '/contact' || router.route === '/about-us';
+    
+    if (isSelected) {
+      if (isYellowBgRoute && !fix) {
+        return `${styles['navbar-selected-has-yellow-bg']}`;
+      }
+      return `${styles['navbar-selected']}`;
+    }
+    return `${styles['navbar-a']}`;
+  };
+
   return (
     <nav
       className={`${className} ${fix ? styles['navbar-fixed'] : styles.navbar}`}
@@ -49,25 +62,25 @@ const Navbar = ({ className }: NavbarProps) => {
       </div>
       
       <div className={`${styles.navLinks} ${isMenuOpen ? styles.navLinksMobile : ''}`}>
-        <Link href="/articles" className={`${router.route === '/articles' ? styles['navbar-selected'] : ''} ${styles['navbar-a']}`}>
-        Articles
+        <Link href="/articles" className={getLinkClassNames('/articles')}>
+          Articles
         </Link>
-        <Link href="/about-us" className={`${router.route === '/about-us' ? styles['navbar-selected'] : ''} ${styles['navbar-a']}`}>
+        <Link href="/about-us" className={getLinkClassNames('/about-us')}>
           About Us
         </Link>
-        <Link href="/calendar" className={`${router.route === '/calendar' ? styles['navbar-selected'] : ''} ${styles['navbar-a']}`}>
+        <Link href="/calendar" className={getLinkClassNames('/calendar')}>
           Calendar
         </Link>
-        <Link href="/gallery" className={`${router.route === '/gallery' ? styles['navbar-selected'] : ''} ${styles['navbar-a']}`}>
+        <Link href="/gallery" className={getLinkClassNames('/gallery')}>
           Gallery
         </Link>
-        <Link href="/why-us" className={`${router.route === '/why-us' ? styles['navbar-selected'] : ''} ${styles['navbar-a']}`}>
+        <Link href="/why-us" className={getLinkClassNames('/why-us')}>
           Why Us
         </Link>
-        <Link href="/admission" className={`${router.route === '/admission' ? styles['navbar-selected'] : ''} ${styles['navbar-a']}`}>
+        <Link href="/admission" className={getLinkClassNames('/admission')}>
           Admission
         </Link>
-        <Link href="/contact" className={`${router.route === '/contact' ? styles['navbar-selected'] : ''} ${styles['navbar-a']}`}>
+        <Link href="/contact" className={getLinkClassNames('/contact')}>
           Contact Us
         </Link>
       </div>

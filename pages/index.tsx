@@ -79,7 +79,7 @@ export default function Home() {
               The perfect school ... It&apos;s not just certificates and a high level of teaching.
               of teaching. This is not lacking in most educational institutions.
               After all, their role is to improve their own quality management
-              systems and constantly increase the level of services offered.
+              systems and constantly increase the level of services offered.{" "}
               <span>
                 We are a classy school, we are certified by the CBSE, our staff
                 are real class teachers...

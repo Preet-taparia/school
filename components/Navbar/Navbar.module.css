@@ -27,9 +27,13 @@
 }
 
 .navbar-a {
-  @apply text-white font-bold text-[22px] hover:text-[#FAC13C] duration-300 px-3 2xl:px-6;
+  @apply text-white font-bold text-[22px] hover:text-[#071E4A] duration-300 px-3 2xl:px-6;
 }
 
 .navbar-selected {
-  @apply text-[#FAC13C] hover:cursor-default;
+  @apply text-[22px] font-bold  text-[#FAC13C] hover:cursor-default  px-3 2xl:px-6;
+}
+
+.navbar-selected-has-yellow-bg{
+  @apply text-[22px] font-bold  text-[#071E4A] hover:cursor-default  px-3 2xl:px-6;
 }
