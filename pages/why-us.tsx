@@ -139,7 +139,7 @@ const Icon = ({
   );
 };
 
-const Offer = () => {
+const WhyUs = () => {
   const router = useRouter();
   const { width } = useWindowDimensions();
   const ref = useRef<HTMLDivElement>(null);
@@ -154,6 +154,7 @@ const Offer = () => {
         behavior: 'smooth',
       });
   };
+
   return (
     <Fragment>
       <PageHeader
@@ -257,10 +258,10 @@ const Offer = () => {
           ))}
         </div>
         <div
-          className={` ${styles['section-images-container']} flex-col justify-center`}
+          className={` ${styles['section-images-container']} flex-col justify-center items-center`}
         >
           <Image src={activityClubsMobile} alt="What sets us apart" />
-          <div className="mt-[50px] xl:mt-[50px]">
+          <div className="mt-[50px] xl:mt-[50px] flex justify-center">
             <Button
               label="Know more about admission"
               onClick={() => router.replace('/admission')}
@@ -302,4 +303,4 @@ const Offer = () => {
   );
 };
 
-export default Offer;
+export default WhyUs;
