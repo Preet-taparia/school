@@ -50,7 +50,7 @@ const Contact = () => {
         <Map />
         <HeaderWithBubbles header='Contact Information' />
         <ContactData />
-        <HeaderWithBubbles header='Inquiry Form' />
+        <HeaderWithBubbles header='Need Support?' />
         <ContactForm />
       </main>
     </Fragment>

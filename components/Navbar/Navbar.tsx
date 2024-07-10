@@ -57,7 +57,7 @@ const Navbar = ({ className }: NavbarProps) => {
       role="navigation"
       aria-label="Main"
     >
-      <div onClick={() => router.push('/')} className="w-[70px] xl:w-[100px] hover:cursor-pointer">
+      <div onClick={() => router.push('/')} className="w-[60px] hover:cursor-pointer">
         <Image src={Logo} alt="Home" />
       </div>
       

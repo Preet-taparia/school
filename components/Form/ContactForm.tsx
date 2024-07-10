@@ -4,7 +4,6 @@ import * as Yup from 'yup';
 import { Input } from './components/Input/Input';
 import { Textarea } from './components/Textarea/Textarea';
 import styles from './Form.module.css';
-import useWindowDimensions from '../../hooks/useWindowDimensions';
 import Button from '../Button/Button';
 
 const InitialValues = {
@@ -15,7 +14,6 @@ const InitialValues = {
 
 const ContactForm = () => {
   const [mailSendStatus, setMailSendStatus] = useState('');
-  const { width } = useWindowDimensions();
 
   const {
     handleChange,

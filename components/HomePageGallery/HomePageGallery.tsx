@@ -4,10 +4,10 @@ import { useRouter } from 'next/router';
 import styles from './HomePageGallery.module.css';
 import EllipsesLeft from '../../public/assets/EllipsesLeft.svg';
 import EllipsesRight from '../../public/assets/EllipsesRight.svg';
-import galleryImg1 from '../../public/assets/homepage/gallery/galleryImg1.svg';
-import galleryImg2 from '../../public/assets/homepage/gallery/galleryImg2.svg';
-import galleryImg3 from '../../public/assets/homepage/gallery/galleryImg3.svg';
-import galleryImg4 from '../../public/assets/homepage/gallery/galleryImg4.svg';
+import galleryImg1 from '../../public/assets/homepage/gallery/galleryImg1.jpg';
+import galleryImg2 from '../../public/assets/homepage/gallery/galleryImg2.jpg';
+import galleryImg3 from '../../public/assets/homepage/gallery/galleryImg3.jpg';
+import galleryImg4 from '../../public/assets/homepage/gallery/galleryImg4.jpg';
 
 const images = [
   { src: galleryImg1, alt: 'galleryImg1' },
@@ -45,7 +45,7 @@ const HomePageGallery = () => {
                 className={styles['gallery-image']}
               >
                 <Image
-                  className="w-full"
+                  className="rounded-[25px] min-w-[150px] max-w-[200px] xl:min-w-[190px] xl:max-w-[190px] 2xl:min-w-[205px] 2xl:max-w-[205px] 3xl:min-w-[265px] 2xl:max-w-[265px]"
                   src={image.src}
                   alt="Gallery Photo Number 1"
                   data-lightboxjs="lightbox2"

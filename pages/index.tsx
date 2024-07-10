@@ -1,19 +1,32 @@
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { Fragment } from 'react';
 import Button from '../components/Button/Button';
 import HomePageGallery from '../components/HomePageGallery/HomePageGallery';
 import { PageHeader } from '../components/PageHeader.tsx/PageHeader';
-import EllipsesLeft from '../public/assets/EllipsesLeft.svg';
-import EllipsesRight from '../public/assets/EllipsesRight.svg';
 import BgDesktop from '../public/assets/headers/bgHomeDesktop.jpg';
 import BgMobile from '../public/assets/headers/bgHomeMobile.jpg';
 import AboutUsMobile from '../public/assets/homepage/aboutUsMobile.svg';
 import styles from '../styles/HomePage.module.css';
+import PopUp from "../components/PopUp/PopUp";
+import RegisterForm from '../components/Form/RegisterForm';
 
 export default function Home() {
   const router = useRouter();
+  const [showModal, setShowModal] = useState(false);
 
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+  useEffect(() => {
+    handleOpenModal();
+  }, []);
   return (
     <Fragment>
       <PageHeader
@@ -21,7 +34,7 @@ export default function Home() {
         bgXlUrl={BgDesktop}
         title="The Shining"
         titleSpan="Star School "
-        paragraph="Create your future with us"
+        paragraph="We Aspire to Inspire"
         buttonTitle="School Admission"
         onClick={() => router.push('/admission')}
         textContainerStyles={styles['text-container']}
@@ -41,14 +54,7 @@ export default function Home() {
               The Shining Star School
             </h4>
             <p className={styles['about-us-paragraph']}>
-              The perfect school ... It&apos;s not just certificates and a high level of teaching.
-              of teaching. This is not lacking in most educational institutions.
-              After all, their role is to improve their own quality management
-              systems and constantly increase the level of services offered.{" "}
-              <span>
-                We are a classy school, we are certified by the CBSE, our staff
-                are real class teachers...
-              </span>
+            Unlock Your Child's Potential at The Shining Star School ! Join our nurturing and dynamic learning community where we inspire students to achieve their best academically, socially, and personally. With experienced teachers, state-of-the-art facilities, and a curriculum designed for success, The Shining Star School is the perfect place for your child's educational journey.
             </p>
             <Button
               label="Know More About Us"
@@ -61,6 +67,9 @@ export default function Home() {
         </div>
         <HomePageGallery />
       </div>
+      <PopUp show={showModal} onClose={handleCloseModal}>
+        <RegisterForm />
+      </PopUp>
     </Fragment>
   );
 }

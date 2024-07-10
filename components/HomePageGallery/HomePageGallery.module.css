@@ -19,7 +19,7 @@
 }
 
 .gallery-show-all-images {
-  @apply mx-2 px-2 rounded-[25px] min-w-[150px] max-w-[200px] xl:min-w-[190px] xl:max-w-[190px] 2xl:min-w-[205px] 2xl:max-w-[205px] 3xl:min-w-[265px] 2xl:max-w-[265px] bg-[#FAC13C] flex justify-center items-center text-white text-[18px] font-bold text-center xl:text-[22px] xl:rounded-[50px] hover:bg-[#FFB301] hover:cursor-pointer duration-300;
+  @apply mx-2 px-2 rounded-[25px] min-w-[150px] max-w-[200px] xl:min-w-[190px] xl:max-w-[190px] 2xl:min-w-[205px] 2xl:max-w-[205px] 3xl:min-w-[265px] 2xl:max-w-[265px] bg-[#FAC13C] flex justify-center items-center text-white text-[18px] font-bold text-center xl:text-[22px] xl:rounded-[50px] hover:bg-[#FFB301] hover:cursor-pointer duration-300 mb-5 xl:mb-7;
 }
 
 .ellipses-left {

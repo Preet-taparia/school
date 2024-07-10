@@ -4,7 +4,6 @@ import * as Yup from 'yup';
 import { Input } from './components/Input/Input';
 import { Select } from './components/Select/Select';
 import styles from './Form.module.css';
-import useWindowDimensions from '../../hooks/useWindowDimensions';
 import Button from '../Button/Button';
 
 const InitialValues = {
@@ -18,7 +17,6 @@ const InitialValues = {
 
 const RegisterForm = () => {
   const [mailSendStatus, setMailSendStatus] = useState('');
-  const { width } = useWindowDimensions();
 
   const {
     handleChange,
@@ -172,7 +170,7 @@ const RegisterForm = () => {
         <Input
           label="Mobile*"
           name="mobile"
-          placeholder="Enter student's mobile number"
+          placeholder="Enter mobile number"
           handleChange={handleChange}
           value={values.mobile}
           handleBlur={handleBlur}
@@ -181,7 +179,7 @@ const RegisterForm = () => {
         <Input
           label="Email*"
           name="email"
-          placeholder="Enter student's email"
+          placeholder="Enter parent's email"
           handleChange={handleChange}
           value={values.email}
           handleBlur={handleBlur}
