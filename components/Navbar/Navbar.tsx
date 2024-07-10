@@ -62,9 +62,6 @@ const Navbar = ({ className }: NavbarProps) => {
       </div>
       
       <div className={`${styles.navLinks} ${isMenuOpen ? styles.navLinksMobile : ''}`}>
-        <Link href="/articles" className={getLinkClassNames('/articles')}>
-          Articles
-        </Link>
         <Link href="/about-us" className={getLinkClassNames('/about-us')}>
           About Us
         </Link>
