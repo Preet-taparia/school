@@ -30,7 +30,7 @@ const Footer = () => {
               Ph. <b>941 401 7518</b>
             </p>
             <p>
-              mail: <b>up28july@gmail.com</b>
+              mail: <b>theshiningstar626@gmail.com</b>
             </p>
           </div>
         </div>

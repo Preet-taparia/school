@@ -19,7 +19,7 @@ const ContactData = () => {
               Ph. <span className="font-bold">941 401 7518</span>
             </p>
             <p>
-              mail: <span className="font-bold">up28july@gmail.com</span>
+              mail: <span className="font-bold">theshiningstar626@gmail.com</span>
             </p>
           </div>
           <div className={`${styles['section-inner-box']} `}>

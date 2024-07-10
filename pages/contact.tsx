@@ -49,6 +49,7 @@ const Contact = () => {
         <HeaderWithBubbles header='The Shining Star School' />
         <Map />
         <ContactData />
+        <HeaderWithBubbles header='Inquiry Form' />
         <ContactForm />
       </main>
     </Fragment>

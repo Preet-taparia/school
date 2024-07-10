@@ -2,18 +2,21 @@ import { useFormik } from 'formik';
 import { Fragment, useEffect, useState } from 'react';
 import * as Yup from 'yup';
 import { Input } from './components/Input/Input';
-import { Textarea } from './components/Textarea/Textarea';
+import { Select } from './components/Select/Select';
 import styles from './Form.module.css';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import Button from '../Button/Button';
 
 const InitialValues = {
-  fullName: '',
+  firstName: '',
+  lastName: '',
+  mobile: '',
   email: '',
-  message: '',
+  class: '',
+  parentName: '',
 };
 
-const ContactForm = () => {
+const RegisterForm = () => {
   const [mailSendStatus, setMailSendStatus] = useState('');
   const { width } = useWindowDimensions();
 
@@ -23,15 +26,19 @@ const ContactForm = () => {
     handleBlur,
     errors,
     touched,
+    setFieldValue,
     handleSubmit,
     isValid,
   } = useFormik({
     initialValues: InitialValues,
 
     validationSchema: Yup.object({
-      fullName: Yup.string().required('Full name is required'),
+      firstName: Yup.string().required('First name is required'),
+      lastName: Yup.string().required('Last name is required'),
+      mobile: Yup.string().required('Mobile number is required'),
       email: Yup.string().email('Invalid email address').required('Email is required'),
-      message: Yup.string().required('Message is required'),
+      class: Yup.string().required().notOneOf(['Select class']),
+      parentName: Yup.string().required('Parent name is required'),
     }),
 
     onSubmit: (values, { resetForm }) => {
@@ -145,32 +152,74 @@ const ContactForm = () => {
     <Fragment>
       <div className={styles['section-container']}>
         <Input
-          label="Full Name*"
-          name="fullName"
-          placeholder="Enter your full name"
+          label="First Name*"
+          name="firstName"
+          placeholder="Enter student's first name"
           handleChange={handleChange}
-          value={values.fullName}
+          value={values.firstName}
           handleBlur={handleBlur}
-          error={touched.fullName ? errors.fullName : ''}
+          error={touched.firstName ? errors.firstName : ''}
+        />
+        <Input
+          label="Last Name*"
+          name="lastName"
+          placeholder="Enter student's last name"
+          handleChange={handleChange}
+          value={values.lastName}
+          handleBlur={handleBlur}
+          error={touched.lastName ? errors.lastName : ''}
+        />
+        <Input
+          label="Mobile*"
+          name="mobile"
+          placeholder="Enter student's mobile number"
+          handleChange={handleChange}
+          value={values.mobile}
+          handleBlur={handleBlur}
+          error={touched.mobile ? errors.mobile : ''}
         />
         <Input
           label="Email*"
           name="email"
-          placeholder="Enter your email"
+          placeholder="Enter student's email"
           handleChange={handleChange}
           value={values.email}
           handleBlur={handleBlur}
           error={touched.email ? errors.email : ''}
           type="email"
         />
-        <Textarea
-          label="Message*"
-          name="message"
-          placeholder="Enter your message"
+        <Select
+          placeholder="Select class"
+          label="Select class"
+          selectedValue={values.class}
+          valueList={[
+            'Playgroup',
+            'Nursery',
+            'LKG',
+            'UKG',
+            'Class 1',
+            'Class 2',
+            'Class 3',
+            'Class 4',
+            'Class 5',
+            'Class 6',
+            'Class 7',
+            'Class 8',
+            'Class 9',
+            'Class 10',
+          ]}
+          name="class"
+          setFieldValue={(name, value) => setFieldValue(name, value)}
+          error={touched.class ? errors.class : ''}
+        />
+        <Input
+          label="Parent Name*"
+          name="parentName"
+          placeholder="Enter parent name"
           handleChange={handleChange}
-          value={values.message}
+          value={values.parentName}
           handleBlur={handleBlur}
-          error={touched.message ? errors.message : ''}
+          error={touched.parentName ? errors.parentName : ''}
         />
       </div>
 
@@ -181,4 +230,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default RegisterForm;
