@@ -36,13 +36,15 @@ const Footer = () => {
         </div>
 
         <div className={styles['footer-content-box']}>
-          <p className="font-bold">Quick Links</p>
+          <p className="font-bold">Site Map</p>
           <div className="mt-5">
+            <p>Home Page</p>
             <p>About Us</p>
-            <p>Contact Us</p>
-            <p>Admission</p>
+            <p>Calendar</p>
             <p>Gallery</p>
-            <p>Events</p>
+            <p>Why Us</p>
+            <p>Admission</p>
+            <p>Contact Us</p>
           </div>
         </div>
 
