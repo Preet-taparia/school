@@ -48,6 +48,7 @@ const Contact = () => {
       <main ref={ref} className="px-5 py-8 pb-[50px] md:px-8 md:py-12 xl:px-[110px] xl:pb-[100px] 2xl:px-[180px]">
         <HeaderWithBubbles header='The Shining Star School' />
         <Map />
+        <HeaderWithBubbles header='Contact Information' />
         <ContactData />
         <HeaderWithBubbles header='Inquiry Form' />
         <ContactForm />

@@ -4,19 +4,19 @@ const ContactData = () => {
   return (
     <div className="w-full mx-auto">
       <div className={styles['section-container']}>
-        <h5 className={`${styles['section-header']} `}>Contact Information</h5>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className={`${styles['section-inner-box']}`}>
-            <p className="font-bold">Ganesh Nagar</p>
+            <p className="font-bold">625-626, Ganesh Nagar Main</p>
             <p className="font-bold">Niwaru Road</p>
             <p className="font-bold">Jhotwara, Jaipur</p>
+            <p className="font-bold">India, 302012</p>
           </div>
           <div className={`${styles['section-inner-box']} `}>
             <p>
-              Ph. <span className="font-bold">941 445 6312</span>
+              Ph. <span className="font-bold">941 401 7518</span>
             </p>
             <p>
-              Ph. <span className="font-bold">941 401 7518</span>
+              Ph. <span className="font-bold">941 445 6312</span>
             </p>
             <p>
               mail: <span className="font-bold">theshiningstar626@gmail.com</span>
