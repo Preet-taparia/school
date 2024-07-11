@@ -1,5 +1,7 @@
 import { Fragment } from 'react';
 import styles from './PopUp.module.css';
+import Image from 'next/image';
+import closeIcon from "../../public/assets/news/closeIcon.svg"
 
 const PopUp = ({ show, onClose, children }) => {
     if (!show) {
@@ -12,7 +14,7 @@ const PopUp = ({ show, onClose, children }) => {
       <div className={styles['modal-content']}>
         {children}
         <button className={styles['modal-close']} onClick={onClose}>
-          &times;
+          <Image src={closeIcon} alt='X'/>
         </button>
       </div>
     </Fragment>  )

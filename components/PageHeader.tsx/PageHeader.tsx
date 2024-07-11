@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import styles from './PageHeader.module.css';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import ArrowBlue from '../../public/assets/rightDarkBlueArrow.svg';
@@ -16,7 +15,6 @@ interface IProps {
   bgUrl: any;
   bgXlUrl: any;
   textContainerStyles?: any;
-  checkKindergarten?: boolean;
 }
 
 export const PageHeader = ({
@@ -29,7 +27,6 @@ export const PageHeader = ({
   bgUrl,
   bgXlUrl,
   textContainerStyles,
-  checkKindergarten = false,
 }: IProps) => {
   const { width } = useWindowDimensions();
 
