@@ -1,23 +1,21 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
+import sendMail from '../../lib/sendMail';
+import { appendDataToSheet } from '../../lib/sheetUtils';
 
 dotenv.config();
 
-const transporter = nodemailer.createTransport({
-  port: 587,
-  host: 'smtp.gmail.com',
-  auth: {
-    user: process.env.EMAIL!,
-    pass: process.env.PASSWORD!,
-  },
-  tls: {
-    ciphers: 'SSLv3',
-  },
-});
+interface RegisterFormValues {
+  firstName: string;
+  lastName: string;
+  mobile: string;
+  email: string;
+  class: string;
+  parentName: string;
+}
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  const { firstName, lastName, mobile, email, class: className, parentName } = req.body;
+  const { firstName, lastName, mobile, email, class: className, parentName }: RegisterFormValues = req.body;
 
   const mailToSchool = {
     from: process.env.EMAIL!,
@@ -34,14 +32,13 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   };
 
   try {
-    await transporter.sendMail(mailToSchool);
-    console.log('Email sent to school successfully');
-
-    res.status(200).json({ message: 'Email sent successfully' });
+    await sendMail(mailToSchool);
+    const sheetResponse = await appendDataToSheet({ firstName, lastName, mobile, email, class: className, parentName }, "Sheet1!A1");
+    res.status(200).json({ message: 'Email and data sent successfully' });
   } catch (error) {
-    console.error('Error sending email:', error);
-    res.status(500).json({ error: 'Error sending email' });
+    console.error('Error:', error);
+    res.status(500).json({ error: 'Error sending email or updating sheet' });
   }
 };
 
-export default handler;
+export default handler; 

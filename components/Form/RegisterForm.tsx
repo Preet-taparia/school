@@ -41,7 +41,7 @@ const RegisterForm = () => {
 
     onSubmit: (values, { resetForm }) => {
       setMailSendStatus('In Progress');
-      fetch('/api/contact', {
+      fetch('/api/register', {
         method: 'POST',
         headers: {
           Accept: 'application/json, text/plain, */*',
@@ -122,16 +122,7 @@ const RegisterForm = () => {
           />
         );
 
-      case 'Error':
-        return (
-          <Button
-            label="Error Sending"
-            onClick={() => handleSubmit()}
-            buttonColor="bg-[red]"
-            textColor="text-[#ffffff]"
-            className={styles['send-button']}
-          />
-        );
+
 
       default:
         return (
