@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { Fragment, useRef } from 'react';
 import Button from '../components/Button/Button';
 import CalendarEvent from '../components/CalendarEvent/CalendarEvent';
-import { PageHeader } from '../components/PageHeader.tsx/PageHeader';
+import { PageHeader } from '../components/PageHeader/PageHeader';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 import BgDesktop from '../public/assets/headers/bgOfferDesktop.jpg';
 import BgMobile from '../public/assets/headers/bgOfferMobile.jpg';

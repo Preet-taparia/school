@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Fragment, useRef, useState } from 'react';
 import HeaderWithBubbles from '../components/HeaderWithBubbles/HeaderWithBubbles';
 import Modal from '../components/Modal/Modal';
-import { PageHeader } from '../components/PageHeader.tsx/PageHeader';
+import { PageHeader } from '../components/PageHeader/PageHeader';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 import BgDesktop from '../public/assets/headers/BgGalleryDesktop.jpg';
 import BgMobile from '../public/assets/headers/bgGalleryMobile.jpg';

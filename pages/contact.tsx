@@ -3,7 +3,7 @@ import { Fragment, useRef, useMemo } from 'react';
 import ContactData from '../components/ContactData/ContactData';
 import HeaderWithBubbles from '../components/HeaderWithBubbles/HeaderWithBubbles';
 import ContactForm from '../components/Form/ContactForm';
-import { PageHeader } from '../components/PageHeader.tsx/PageHeader';
+import { PageHeader } from '../components/PageHeader/PageHeader';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 import BgDesktop from '../public/assets/headers/bgContactDesktop.jpg';
 import BgMobile from '../public/assets/headers/bgContactMobile.jpg';
@@ -50,7 +50,6 @@ const Contact = () => {
         <Map />
         <HeaderWithBubbles header='Contact Information' />
         <ContactData />
-        <HeaderWithBubbles header='Need Support?' />
         <ContactForm />
       </main>
     </Fragment>

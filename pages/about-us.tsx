@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import { Fragment, useRef } from 'react';
 import AboutUs_SocialMedia from '../components/AboutUs-SocialMedia/AboutUs-SocialMedia';
-import LogoAndStatut from '../components/LogoAndStatut/LogoAndStatut';
-import { PageHeader } from '../components/PageHeader.tsx/PageHeader';
+import { PageHeader } from '../components/PageHeader/PageHeader';
 import TeachingStaff from '../components/TeachingStaff/TeachingStaff';
 import WhatWeOffer from '../components/WhatWeOffer/WhatWeOffer';
 import useWindowDimensions from '../hooks/useWindowDimensions';
@@ -40,7 +39,6 @@ const AboutUs = () => {
         ref={ref}
         className="pb-[50px] px-5 md:px-8 md:mt-8 xl:px-[110px] xl:pb-[100px] 2xl:px-[180px] overflow-hidden"
       >
-        <LogoAndStatut />
         <WhatWeOffer />
         <div className="w-screen relative min-h-[250px] -mx-5 md:-mx-8 md:mb-5 xl:mt-8 xl:mb-12 xl:mx-[-110px] 2xl:mx-[-180px]  ">
           <div className="absolute top-0 w-full h-full z-10 flex justify-center items-center">

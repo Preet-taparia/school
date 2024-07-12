@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { Fragment } from 'react';
 import Button from '../components/Button/Button';
 import HomePageGallery from '../components/HomePageGallery/HomePageGallery';
-import { PageHeader } from '../components/PageHeader.tsx/PageHeader';
+import { PageHeader } from '../components/PageHeader/PageHeader';
 import BgDesktop from '../public/assets/headers/bgHomeDesktop.jpg';
 import BgMobile from '../public/assets/headers/bgHomeMobile.jpg';
 import AboutUsMobile from '../public/assets/homepage/aboutUsMobile.svg';

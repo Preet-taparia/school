@@ -4,7 +4,7 @@
 
 .modal-content {
   @apply fixed inset-0 m-auto w-11/12 max-w-md p-6 bg-white rounded-lg z-50;
-  max-height: 90vh;
+  max-height: 60vh;
   overflow-y: auto;
 }
 

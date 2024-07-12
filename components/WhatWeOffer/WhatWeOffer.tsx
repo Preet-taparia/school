@@ -16,7 +16,7 @@ const WhatWeOffer = () => {
           <Image src={OwlImage} alt="Grafika Sowa" />
         </div>
         <div className="xl:flex-1">
-          <h4 className={styles['owl-header']}>Over 10 years in education</h4>
+          <h4 className={styles['owl-header']}>Around 10 years in education</h4>
 
           <p className={styles['owl-paragraph']}>
             The Shining Star School is an institution with a rich baggage of

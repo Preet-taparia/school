@@ -5,6 +5,9 @@ import { Input } from './components/Input/Input';
 import { Select } from './components/Select/Select';
 import styles from './Form.module.css';
 import Button from '../Button/Button';
+import EllipsesLeft from '../../public/assets/EllipsesLeft.svg';
+import EllipsesRight from '../../public/assets/EllipsesRight.svg';
+import Image from 'next/image';
 
 const InitialValues = {
   firstName: '',
@@ -139,6 +142,9 @@ const RegisterForm = () => {
 
   return (
     <Fragment>
+      <div className={styles['header2-container']}>
+        <h2 className={styles.header2}>Admission Form</h2>
+      </div>
       <div className={styles['section-container']}>
         <Input
           label="First Name*"

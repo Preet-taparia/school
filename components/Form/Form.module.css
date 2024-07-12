@@ -3,15 +3,15 @@
 }
 
 .header2-container {
-  @apply w-full flex justify-center relative xl:w-1/2 xl:self-center xl:my-10 2xl:w-3/5 3xl:w-2/5;
+  @apply w-full flex justify-center relative;
 }
 
 .header2 {
-  @apply text-[#579CE2] font-bold text-center text-3xl py-2 w-[150px] md:text-4xl md:w-auto xl:text-5xl;
+  @apply text-[#579CE2] font-bold text-center text-3xl pb-10 w-[150px] md:text-4xl md:w-auto xl:text-5xl;
 }
 
 .header3 {
-  @apply text-[#579CE2] font-bold text-center text-2xl py-10 md:text-3xl xl:text-left xl:text-4xl xl:block xl:w-full;
+  @apply text-[#579CE2] text-center text-2xl py-10 md:text-3xl xl:text-left xl:text-4xl xl:block xl:w-full;
 }
 
 .ellipses-left {

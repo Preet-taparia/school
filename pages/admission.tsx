@@ -1,5 +1,5 @@
 import { Fragment, useRef } from 'react';
-import { PageHeader } from '../components/PageHeader.tsx/PageHeader';
+import { PageHeader } from '../components/PageHeader/PageHeader';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 import BgDesktop from '../public/assets/headers/bgRecruitmentDesktop.jpg';
 import BgMobile from '../public/assets/headers/bgRecruitmentMobile.jpg';

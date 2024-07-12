@@ -5,6 +5,7 @@ import { Input } from './components/Input/Input';
 import { Textarea } from './components/Textarea/Textarea';
 import styles from './Form.module.css';
 import Button from '../Button/Button';
+import HeaderWithBubbles from '../HeaderWithBubbles/HeaderWithBubbles';
 
 const InitialValues = {
   fullName: '',
@@ -141,6 +142,7 @@ const ContactForm = () => {
 
   return (
     <Fragment>
+      <HeaderWithBubbles header='Need Support?' />
       <div className={styles['section-container']}>
         <Input
           label="Full Name*"

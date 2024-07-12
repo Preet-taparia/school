@@ -10,7 +10,9 @@ const PopUp = ({ show, onClose, children }) => {
     
   return (
     <Fragment>
+      
       <div className={styles['modal-backdrop']} onClick={onClose} />
+      
       <div className={styles['modal-content']}>
         {children}
         <button className={styles['modal-close']} onClick={onClose}>

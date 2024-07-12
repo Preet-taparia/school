@@ -1,0 +1,94 @@
+{
+    "singleEvents": [
+      {
+        "header": "Parent Teacher Meetings",
+        "dates": [
+          "5 July 2024",
+          "6 September 2024",
+          "8 November 2024",
+          "10 January 2025",
+          "7 March 2025",
+          "9 May 2025"
+        ]
+      },
+      {
+        "header": "Days off from classes",
+        "dates": [
+          "15 August 2024 (Independence Day)",
+          "2 October 2024 (Gandhi Jayanti)",
+          "24 October 2024 (Dussehra)",
+          "31 October 2024 (Diwali)",
+          "25 December 2024 (Christmas)",
+          "1 January 2025 (New Year's Day)",
+          "26 January 2025 (Republic Day)",
+          "6 March 2025 (Holi)",
+          "14 April 2025 (Dr. Ambedkar Jayanti)",
+          "1 May 2025 (Maharashtra Day)"
+        ]
+      }
+    ],
+    "multiEvents": [
+      {
+        "label": "School Reopens",
+        "date": "1 June 2024"
+      },
+      {
+        "label": "Investiture Ceremony",
+        "date": "5 July 2024"
+      },
+      {
+        "label": "Annual Sports Day",
+        "date": "20 August 2024"
+      },
+      {
+        "label": "Teacher's Day Celebration",
+        "date": "5 September 2024"
+      },
+      {
+        "label": "Annual Day",
+        "date": "15 November 2024"
+      },
+      {
+        "label": "Christmas Celebration",
+        "date": "24 December 2024"
+      },
+      {
+        "label": "Winter Break",
+        "date": "25 December 2024 - 1 January 2025"
+      },
+      {
+        "label": "Science Exhibition",
+        "date": "10 February 2025"
+      },
+      {
+        "label": "Holi Celebration",
+        "date": "6 March 2025"
+      },
+      {
+        "label": "Final Exams",
+        "date": "1 April 2025 - 20 April 2025"
+      },
+      {
+        "label": "Summer Vacation",
+        "date": "1 May 2025 - 31 May 2025"
+      }
+    ],
+    "calendarEvents": [
+      {
+        "title": "All day conference",
+        "start": "2024-11-04",
+        "end": "2024-11-06"
+      },
+      {
+        "title": "Meeting with Mary",
+        "start": "2024-11-10",
+        "end": "2024-11-10"
+      },
+      {
+        "title": "Winter Hackathon",
+        "start": "2024-11-22",
+        "end": "2024-11-25"
+      }
+    ]
+  }
+  

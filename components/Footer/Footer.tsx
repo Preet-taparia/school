@@ -36,19 +36,6 @@ const Footer = () => {
         </div>
 
         <div className={styles['footer-content-box']}>
-          <p className="font-bold">Site Map</p>
-          <div className="mt-5">
-            <p>Home Page</p>
-            <p>About Us</p>
-            <p>Calendar</p>
-            <p>Gallery</p>
-            <p>Why Us</p>
-            <p>Admission</p>
-            <p>Contact Us</p>
-          </div>
-        </div>
-
-        <div className={styles['footer-content-box']}>
           <p className="font-bold">Working hours</p>
           <div className="mt-5">
             <b>Fees</b>
@@ -71,6 +58,19 @@ const Footer = () => {
             <p>Class 1-5: <b>570 907 110</b></p>
             <p>Class 6-8: <b>533 890 098</b></p>
             <p>Class 9-10: <b>730 926 556</b></p>
+          </div>
+        </div>
+
+        <div className={styles['footer-content-box']}>
+          <p className="font-bold">Site Map</p>
+          <div className="mt-5">
+            <p>Home Page</p>
+            <p>About Us</p>
+            <p>Calendar</p>
+            <p>Gallery</p>
+            <p>Why Us</p>
+            <p>Admission</p>
+            <p>Contact Us</p>
           </div>
         </div>
       </div>
