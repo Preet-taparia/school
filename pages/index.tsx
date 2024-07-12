@@ -34,7 +34,7 @@ export default function Home() {
         bgXlUrl={BgDesktop}
         title="The Shining"
         titleSpan="Star School "
-        paragraph="We Aspire to Inspire"
+        paragraph="We offer child focused environment to encourage their curiosity and much more."
         buttonTitle="School Admission"
         onClick={() => router.push('/admission')}
         textContainerStyles={styles['text-container']}
@@ -54,7 +54,7 @@ export default function Home() {
               The Shining Star School
             </h4>
             <p className={styles['about-us-paragraph']}>
-            Unlock Your Child&apos;s Potential at The Shining Star School ! Join our nurturing and dynamic learning community where we inspire students to achieve their best academically, socially, and personally. With experienced teachers, state-of-the-art facilities, and a curriculum designed for success, The Shining Star School is the perfect place for your child&apos;s educational journey.
+              Unlock Your Child&apos;s Potential at The Shining Star School ! Join our nurturing and dynamic learning community where we inspire students to achieve their best academically, socially, and personally. With experienced teachers, state-of-the-art facilities, and a curriculum designed for success, The Shining Star School is the perfect place for your child&apos;s educational journey.
             </p>
             <Button
               label="Know More About Us"
