@@ -1,9 +1,9 @@
 .navbar {
-  @apply top-0 bg-[#071E4A] w-full h-[60px] xl:bg-transparent flex items-center justify-between px-3 py-4 z-[10] xl:flex xl:mt-5 xl:px-[110px] 2xl:px-[180px] 3xl:mx-auto sticky transition-all duration-1000 ease-in-out;
+  @apply top-0 bg-[#071E4A] w-full h-[100px] xl:bg-transparent flex items-center justify-between px-3 py-4 z-[10] xl:flex xl:mt-5 xl:px-[110px] 2xl:px-[180px] 3xl:mx-auto sticky transition-all duration-1000 ease-in-out;
 }
 
 .navbar-fixed {
-  @apply fixed top-0 bg-[#071E4A] w-full h-[60px] flex items-center justify-between px-3 py-4 z-[10] 2xl:px-[180px]  3xl:mx-auto transition-all duration-1000 ease-in-out;
+  @apply fixed top-0 bg-[#071E4A] w-full h-[100px] flex items-center justify-between px-3 py-4 z-[10] 2xl:px-[180px]  3xl:mx-auto transition-all duration-1000 ease-in-out;
 }
 
 .navLinks {
@@ -11,7 +11,7 @@
 }
 
 .navLinksMobile {
-  @apply flex flex-col absolute py-4 top-[60px] left-0 w-full bg-[#071E4A] items-center transition-all duration-300 ease-in-out;
+  @apply flex flex-col absolute py-4 top-[100px] left-0 w-full bg-[#071E4A] items-center transition-all duration-300 ease-in-out;
 }
 
 .list {

@@ -1,5 +1,5 @@
 .footer {
-  @apply w-full bg-[#071E4A] py-7 px-5 text-white md:px-8 xl:px-[110px] xl:flex xl:flex-wrap xl:mx-auto  2xl:px-[180px];
+  @apply w-full bg-[#071E4A] py-7 px-5 text-white xl:flex xl:flex-wrap xl:mx-auto;
 }
 
 .footer-header-container {
@@ -7,11 +7,11 @@
 }
 
 .footer-header-text {
-  @apply block flex-1 mr-4 font-bold md:text-[24px] xl:text-[20px];
+  @apply block flex-1 mr-4 font-bold md:text-[24px] xl:text-[32px];
 }
 
 .footer-logo-container {
-  @apply w-3/12 h-full xl:w-[100px];
+  @apply w-3/12 h-full xl:w-[80px];
 }
 
 .footer-logo {
@@ -19,7 +19,7 @@
 }
 
 .footer-content-grid {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 mx-auto;
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 mx-auto mb-3;
 }
 
 .footer-content-box {

@@ -28,11 +28,6 @@ export default function Layout({ children }: ILayout) {
           content="The Shining Star School"
           key={'og:description'}
         />
-        <meta
-          key={'og:image'}
-          property="og:image"
-          content="/assets/homepage/aboutUsMobile.svg"
-        />
       </Head>
       {width && width < 1280 && <Navbar className={""} />}
       <>{children}</>

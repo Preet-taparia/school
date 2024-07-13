@@ -13,7 +13,7 @@ const WhatWeOffer = () => {
     <Fragment>
       <div className={styles['owl-container']}>
         <div className={styles['owl-image-container']}>
-          <Image src={OwlImage} alt="Grafika Sowa" />
+          <Image src={OwlImage} alt="Owl Image" />
         </div>
         <div className="xl:flex-1">
           <h4 className={styles['owl-header']}>Around 10 years in education</h4>
@@ -34,7 +34,7 @@ const WhatWeOffer = () => {
 
       <div className={styles['section-rocket-container']}>
         <div className={styles['section-icon-container']}>
-          <Image src={RocketIcon} alt="Rakieta" />
+          <Image src={RocketIcon} alt="icons" />
         </div>
         <div className={styles['section-text-wrapper']}>
           <h4 className={styles['section-header']}>Modern Teaching Agents</h4>
@@ -56,7 +56,7 @@ const WhatWeOffer = () => {
       <div className="xl:flex xl:flex-wrap xl:justify-between">
         <div className={styles['section-container']}>
           <div className={styles['section-icon-container']}>
-            <Image src={LightIcon} alt="Żarówka" />
+            <Image src={LightIcon} alt="icons" />
           </div>
           <div className={styles['section-text-wrapper']}>
             <h4 className={styles['section-header']}>
@@ -74,7 +74,7 @@ const WhatWeOffer = () => {
 
         <div className={styles['section-container']}>
           <div className={styles['section-icon-container']}>
-            <Image src={PencilIcon} alt="Długopis" />
+            <Image src={PencilIcon} alt="icon" />
           </div>
           <div className={styles['section-text-wrapper']}>
             <h4 className={styles['section-header']}>
@@ -93,7 +93,7 @@ const WhatWeOffer = () => {
 
         <div className={styles['section-container']}>
           <div className={styles['section-icon-container']}>
-            <Image src={PeopleIcon} alt="Ludzie" />
+            <Image src={PeopleIcon} alt="icon" />
           </div>
           <div className={styles['section-text-wrapper']}>
             <h4 className={styles['section-header']}>Specialist care</h4>
@@ -106,7 +106,7 @@ const WhatWeOffer = () => {
 
         <div className={styles['section-container']}>
           <div className={styles['section-icon-container']}>
-            <Image src={EyeIcon} alt="Ikona oka" />
+            <Image src={EyeIcon} alt="icon" />
           </div>
           <div className={styles['section-text-wrapper']}>
             <h4 className={styles['section-header']}>Security</h4>

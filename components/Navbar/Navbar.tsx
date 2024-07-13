@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import styles from './Navbar.module.css';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
-import Logo from '../../public/assets/logo.svg';
+import Logo from '../../public/assets/logo.png';
 import Hamburger from '../Hamburger/Hamburger';
 
 interface NavbarProps {
@@ -57,7 +57,7 @@ const Navbar = ({ className }: NavbarProps) => {
       role="navigation"
       aria-label="Main"
     >
-      <div onClick={() => router.push('/')} className="w-[60px] hover:cursor-pointer">
+      <div onClick={() => router.push('/')} className="w-[84px] hover:cursor-pointer">
         <Image src={Logo} alt="Home" />
       </div>
       
