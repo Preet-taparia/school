@@ -7,7 +7,7 @@ import HomePageGallery from '../components/HomePageGallery/HomePageGallery';
 import { PageHeader } from '../components/PageHeader/PageHeader';
 import BgDesktop from '../public/assets/headers/bgHomeDesktop.jpg';
 import BgMobile from '../public/assets/headers/bgHomeMobile.jpg';
-import AboutUsMobile from '../public/assets/homepage/aboutUsMobile.svg';
+import AboutUsMobile from '../public/assets/homepage/aboutUsMobile.png';
 import styles from '../styles/HomePage.module.css';
 import PopUp from "../components/PopUp/PopUp";
 import RegisterForm from '../components/Form/RegisterForm';
