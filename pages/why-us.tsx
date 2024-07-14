@@ -263,7 +263,7 @@ const WhyUs = () => {
           <Image src={activityClubsMobile} alt="What sets us apart" />
           <div className="mt-[50px] xl:mt-[50px] flex justify-center">
             <Button
-              label="Know more about admission"
+              label="Admission"
               onClick={() => router.replace('/admission')}
               textColor="text-white"
               buttonColor="bg-[#FAC13C]"

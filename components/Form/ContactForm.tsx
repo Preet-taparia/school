@@ -70,7 +70,7 @@ const ContactForm = () => {
         return (
           <Button
             dataCypress="send-button"
-            label="Submit Contact Form"
+            label="Submit Form"
             onClick={() => {
               handleSubmit();
               if (!isValid) {
