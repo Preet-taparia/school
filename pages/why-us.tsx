@@ -64,57 +64,47 @@ const icons = [
   },
 ];
 
+// What makes us different?
 const awards = [
   'Friendly atmosphere',
-  'High level of security: monitoring, intercom, security',
-  'English language and native speaker from class 1',
-  'Second foreign language from class 3: Spanish or German',
-  'Theatrical education',
-  'Swimming pool',
-  'Judo',
-  'Sensory Integration Room',
-  'Care from pedagogue, psychologist, speech therapist, rehabilitator',
-  'White school - skiing trips',
-  'Green school - always by the sea!',
   'Educational trips - learning by doing',
-  'Cooperation with the cultural institution "City of Gardens" in Katowice',
-  'Cooperation with the Department of Art Education of the Academy of Music in Katowice',
+  'Supportive and caring environment',
+  'Use of AR and smart classrooms',
+  'Blend of modern teaching methods with traditional values',
+  'EYFS-UK curriculum',
+  'Reggio Emilia approach',
+  'Montessori lab',
+  'Focus on both academic learning and personal growth',
+  'Holistic development through various events and activities',
+  'Emphasis on Indian values and experiential learning',
+  'Highly qualified and experienced teachers',
+  'Child-centered learning experience',
+  'Safe and secure environment'
 ];
 
+// Additionally paid extracurricular activities offer
 const extraCurricularActivities = [
-  'Tennis, table tennis',
-  'Aikido',
-  'Chess',
-  'Mathriders',
-  'Piano',
-  'Needlemania',
-  'Robotics',
-  'Dance school',
-  'Summer sports camps',
-  'Weekend trips',
+  'Summer camps',
+  'Trips',
+  'Sports activities',
+  'Music classes',
+  'Drama workshops',
+  'Cultural events',
+  'Dance classes',
+  'Art and craft workshops',
 ];
 
+// Extracurricular activities offer in the tuition fee
 const activityClubs = [
-  'English, Spanish, German language',
-  'Subject circles:',
-  'Mathematical, Physical',
-  'Chemical, Biological',
-  'Polish, Historical',
-  'Artistic, Musical',
-  'Informational',
-  'break',
-  'Choir "Omega Voce"',
-  'Geographic Tourist Circle',
-  'SKS football',
-  'Artistic gymnastics',
-  'Corrective gymnastics, movement rehabilitation with medical recommendation',
-  'CyberFun',
-  'Young graphic designer academy',
-  'EnglishFun',
-  'Polish salon',
-  'Board game masters club',
   'Creativity factory',
+  'Imaginative play',
+  'Exploration of nature',
+  'Art and music sessions',
+  'Storytelling sessions',
+  'Yoga and meditation classes',
+  'Cultural and festival celebrations'
 ];
+
 
 const Icon = ({
   name,
@@ -272,7 +262,7 @@ const WhyUs = () => {
         </div>
       </div>
 
-      <div className="w-full mt-12 py-5 px-3 xs:px-7 xl:flex xl:flex-col xl:px-[110px] 2xl:px-[200px] max-w-[1600px] mx-auto xl:py-2">
+      {/* <div className="w-full mt-12 py-5 px-3 xs:px-7 xl:flex xl:flex-col xl:px-[110px] 2xl:px-[200px] max-w-[1600px] mx-auto xl:py-2">
         <div>
           <h5 className="text-center text-[#FAC13C] font-bold text-[30px]">
             Fees
@@ -298,7 +288,7 @@ const WhyUs = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </Fragment>
   );
 };

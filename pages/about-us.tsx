@@ -56,7 +56,7 @@ const AboutUs = () => {
           </div>
         </div>
         <AboutUs_SocialMedia />
-        <TeachingStaff />
+        {/* <TeachingStaff /> */}
       </main>
     </Fragment>
   );

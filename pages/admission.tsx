@@ -25,10 +25,10 @@ export default function Home() {
       <PageHeader
         bgUrl={BgMobile}
         bgXlUrl={BgDesktop}
-        title="Enroll your child"
+        title="Get Enrolled Today!"
         titleSpan=""
-        paragraph="Fill the form"
-        buttonTitle="Form"
+        paragraph="We're here to answer any questions you may have and guide you through the admission process."
+        buttonTitle="Go To Form"
         onClick={executeScroll}
       />
       <div

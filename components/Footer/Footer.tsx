@@ -55,9 +55,9 @@ const Footer = () => {
           </div>
           <div className="mt-5">
             <b>Contact</b>
+            <p>Elementary Classes : <b>730 926 556</b></p>
             <p>Class 1-5: <b>570 907 110</b></p>
             <p>Class 6-8: <b>533 890 098</b></p>
-            <p>Class 9-10: <b>730 926 556</b></p>
           </div>
         </div>
 
