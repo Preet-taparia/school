@@ -9,8 +9,8 @@ import BgDesktop from '../public/assets/headers/bgHomeDesktop.jpg';
 import BgMobile from '../public/assets/headers/bgHomeMobile.jpg';
 import AboutUsMobile from '../public/assets/homepage/aboutUsMobile.png';
 import styles from '../styles/HomePage.module.css';
-import PopUp from "../components/PopUp/PopUp";
-import RegisterForm from '../components/Form/RegisterForm';
+// import PopUp from "../components/PopUp/PopUp";
+// import RegisterForm from '../components/Form/RegisterForm';
 
 export default function Home() {
   const router = useRouter();
@@ -67,9 +67,9 @@ export default function Home() {
         </div>
         <HomePageGallery />
       </div>
-      <PopUp show={showModal} onClose={handleCloseModal}>
+      {/* <PopUp show={showModal} onClose={handleCloseModal}>
         <RegisterForm />
-      </PopUp>
+      </PopUp> */}
     </Fragment>
   );
 }
