@@ -18,12 +18,12 @@ const Calendar = () => {
         bgUrl={BgMobile}
         bgXlUrl={BgDesktop}
         title="School Calendar"
-        titleSpan="Year 2024 - 25"
+        titleSpan="Year 2026 - 27"
         paragraph="If you are wondering when the important days for school life fall, all you have to do is check the date in our calendar."
         buttonTitle="Check the Calendar"
         onClick={() => null}
       />
-      <HeaderWithBubbles header="Calendar for the Year 2024 - 2025" />
+      <HeaderWithBubbles header="Calendar for the Year 2026 - 2027" />
       
       <div className="xl:flex xl:flex-wrap xl:justify-between max-w-[1300px] xl:mx-auto">
         <MonthlyCalendar className="xl:w-full" events={events.calendarEvents} />

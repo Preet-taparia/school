@@ -76,7 +76,7 @@ const Footer = () => {
       </div>
 
       <div className={styles['footer-school-name']}>
-        <p>© 2024</p>
+        <p>© 2026</p>
         <p>The Shining Star School</p>
       </div>
 

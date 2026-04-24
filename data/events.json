@@ -1,104 +1,103 @@
 {
-    "singleEvents": [
-      {
-        "header": "Parent Teacher Meetings",
-        "dates": [
-          "5 July 2024",
-          "6 September 2024",
-          "8 November 2024",
-          "10 January 2025",
-          "7 March 2025",
-          "9 May 2025"
-        ]
-      },
-      {
-        "header": "Days off from classes",
-        "dates": [
-          "15 August 2024 (Independence Day)",
-          "2 October 2024 (Gandhi Jayanti)",
-          "24 October 2024 (Dussehra)",
-          "31 October 2024 (Diwali)",
-          "25 December 2024 (Christmas)",
-          "1 January 2025 (New Year's Day)",
-          "26 January 2025 (Republic Day)",
-          "6 March 2025 (Holi)",
-          "14 April 2025 (Dr. Ambedkar Jayanti)",
-          "1 May 2025 (Maharashtra Day)"
-        ]
-      }
-    ],
-    "multiEvents": [
-      {
-        "label": "School Reopens",
-        "date": "1 June 2024"
-      },
-      {
-        "label": "Investiture Ceremony",
-        "date": "5 July 2024"
-      },
-      {
-        "label": "Annual Sports Day",
-        "date": "20 August 2024"
-      },
-      {
-        "label": "Teacher's Day Celebration",
-        "date": "5 September 2024"
-      },
-      {
-        "label": "Annual Day",
-        "date": "15 November 2024"
-      },
-      {
-        "label": "Christmas Celebration",
-        "date": "24 December 2024"
-      },
-      {
-        "label": "Winter Break",
-        "date": "25 December 2024 - 1 January 2025"
-      },
-      {
-        "label": "Science Exhibition",
-        "date": "10 February 2025"
-      },
-      {
-        "label": "Holi Celebration",
-        "date": "6 March 2025"
-      },
-      {
-        "label": "Final Exams",
-        "date": "1 April 2025 - 20 April 2025"
-      },
-      {
-        "label": "Summer Vacation",
-        "date": "1 May 2025 - 31 May 2025"
-      }
-    ],
-    "calendarEvents": [
-      {
-        "title": "All day conference",
-        "start": "2024-11-04",
-        "end": "2024-11-06"
-      },
-      {
-        "title": "Meeting with Mary",
-        "start": "2024-11-10",
-        "end": "2024-11-10"
-      },
-      {
-        "title": "Independence Day",
-        "start": "2024-8-15",
-        "end": "2024-8-15"
-      },
-      {
-        "title": "Raksha Bandhan",
-        "start": "2024-8-19",
-        "end": "2024-8-19"
-      },
-      {
-        "title": "Winter Hackathon",
-        "start": "2024-11-22",
-        "end": "2024-11-25"
-      }
-    ]
-  }
-  
+  "singleEvents": [
+    {
+      "header": "Parent Teacher Meetings",
+      "dates": [
+        "5 July 2026 (Sunday)",
+        "6 September 2026 (Sunday)",
+        "8 November 2026 (Sunday)",
+        "10 January 2027 (Sunday)",
+        "7 March 2027 (Sunday)",
+        "9 May 2027 (Sunday)"
+      ]
+    },
+    {
+      "header": "Days off from classes",
+      "dates": [
+        "15 August 2026 (Saturday, Independence Day)",
+        "2 October 2026 (Friday, Gandhi Jayanti)",
+        "20 October 2026 (Tuesday, Dussehra)",
+        "31 October 2026 (Saturday, Diwali)",
+        "25 December 2026 (Friday, Christmas)",
+        "1 January 2027 (Friday, New Year's Day)",
+        "26 January 2027 (Tuesday, Republic Day)",
+        "24 March 2027 (Wednesday, Holi)",
+        "14 April 2027 (Wednesday, Dr. Ambedkar Jayanti)",
+        "1 May 2027 (Saturday, Maharashtra Day)"
+      ]
+    }
+  ],
+  "multiEvents": [
+    {
+      "label": "School Reopens",
+      "date": "1 June 2026 (Monday)"
+    },
+    {
+      "label": "Investiture Ceremony",
+      "date": "6 July 2026 (Monday)"
+    },
+    {
+      "label": "Annual Sports Day",
+      "date": "22 August 2026 (Saturday)"
+    },
+    {
+      "label": "Teacher's Day Celebration",
+      "date": "5 September 2026 (Saturday)"
+    },
+    {
+      "label": "Annual Day",
+      "date": "14 November 2026 (Saturday)"
+    },
+    {
+      "label": "Christmas Celebration",
+      "date": "24 December 2026 (Thursday)"
+    },
+    {
+      "label": "Winter Break",
+      "date": "25 December 2026 (Friday) - 1 January 2027 (Friday)"
+    },
+    {
+      "label": "Science Exhibition",
+      "date": "10 February 2027 (Wednesday)"
+    },
+    {
+      "label": "Holi Celebration",
+      "date": "23 March 2027 (Tuesday)"
+    },
+    {
+      "label": "Final Exams",
+      "date": "1 April 2027 (Thursday) - 20 April 2027 (Tuesday)"
+    },
+    {
+      "label": "Summer Vacation",
+      "date": "1 May 2027 (Saturday) - 31 May 2027 (Monday)"
+    }
+  ],
+  "calendarEvents": [
+    {
+      "title": "All day conference",
+      "start": "2026-11-04",
+      "end": "2026-11-06"
+    },
+    {
+      "title": "Meeting with Mary",
+      "start": "2026-11-10",
+      "end": "2026-11-10"
+    },
+    {
+      "title": "Independence Day",
+      "start": "2026-08-15",
+      "end": "2026-08-15"
+    },
+    {
+      "title": "Raksha Bandhan",
+      "start": "2026-08-30",
+      "end": "2026-08-30"
+    },
+    {
+      "title": "Winter Hackathon",
+      "start": "2026-11-22",
+      "end": "2026-11-25"
+    }
+  ]
+}
