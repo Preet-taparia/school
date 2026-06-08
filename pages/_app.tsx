@@ -1,6 +1,5 @@
 import '../styles/globals.css';
 import 'leaflet/dist/leaflet.css';
-import 'lightbox.js-react/dist/index.css';
 
 import type { AppProps } from 'next/app';
 import { useState, useEffect } from 'react';
@@ -29,10 +28,10 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      {loading ? <Loader />:
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>}
+      {loading ? <Loader /> :
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>}
     </>
   );
 }
